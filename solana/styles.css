@@ -1,0 +1,176 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    background: #000;
+    overflow-x: hidden;
+    font-family: sans-serif;
+}
+
+nav{
+    background: #000;
+    color: white;
+    padding: 1rem;
+    z-index: 22;
+}
+
+.holder{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;    
+}
+
+ul{
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+    font-size: 1.4rem;
+}
+
+li{
+    display: flex;
+}
+
+.holder .bi-list{
+    font-size: 2rem;
+    display: none;
+}
+
+
+.front{
+    color: white;
+    position: relative;
+    /* background: #000; */
+    height: 70vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 200%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.front .right{
+    position: absolute;
+    /* top: 10%; */
+    right: -30%;
+    width: 70%;
+    object-fit: cover;
+}
+.front .left{
+    position: absolute;
+    top: -25%;
+    z-index:-1 ;
+    left: -30%;
+    width: 70%;
+    object-fit: cover;
+}
+
+.content{
+    z-index: 22;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    gap: 1.4rem;
+}
+
+.content h1{
+    font-size:5rem ;
+}
+
+.content p{
+    font-size:1.5rem ;
+}
+
+.content button{
+    padding: 1rem 2rem;
+    transition: all 0.7s;
+    cursor: pointer;
+    border-radius: 50px;
+    border: none;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.content button:nth-child(1){
+    background: linear-gradient(101.81deg, rgb(240, 135, 255) -4.52%, rgb(110, 31, 206) 54.5%, rgba(110, 31, 206, 0.2) 101.41%);
+    color: white;
+}
+
+
+
+
+.content button:nth-child(2){
+    background: transparent;
+    color: white;
+    border: 2px solid white;
+}
+
+
+.content button:hover{
+    transform: translateY(-10px);
+    color: black;
+    background: #fff;
+}
+
+
+
+@media only screen and (max-width:600px){
+    nav{
+        z-index: 222 !important;
+    }
+    .holder{
+        width: 100%;
+        padding: 0;
+        justify-content: space-between;
+    }
+
+    .menu-items{
+        display: none;
+    }
+
+    .holder .bi-list{
+        display: block;
+        color: white !important;
+        z-index: 333;
+    }
+
+    .front .right{
+        height: 100vh;
+        width: 100vw;
+        right: 0;
+        z-index: -2;
+    }
+
+    .front .left{
+        display: none;
+    }
+
+
+    .content h1{
+        font-size: 2rem;
+    }
+
+    .content{
+        width: 100%;
+    }
+
+    .content h1{
+        width: 80%;
+        margin: auto;
+    }
+    .content p{
+        font-size: 1.2rem;
+    }
+
+}
