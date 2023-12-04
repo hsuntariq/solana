@@ -9,6 +9,7 @@ body{
     background: #000;
     overflow-x: hidden;
     font-family: sans-serif;
+    color: white;
 }
 
 nav{
@@ -62,6 +63,7 @@ li{
     right: -30%;
     width: 70%;
     object-fit: cover;
+    z-index: -1;
 }
 .front .left{
     position: absolute;
@@ -123,6 +125,107 @@ li{
     background: #fff;
 }
 
+.brands{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    flex-direction: column;
+}
+
+.imgs{
+    width: 60%;
+    margin: auto;
+    display: flex;
+    margin: 2rem 0;
+}
+
+
+.slider{
+    display: flex;
+    width: 60%;
+    margin: auto;
+    background: #1B1622;
+    padding: 3rem;
+    border-radius: 20px;
+    justify-content: space-between;
+    gap: 5rem;
+}
+
+.text{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+}
+
+.text button:nth-child(1){
+    background: linear-gradient(101.81deg, rgb(240, 135, 255) -4.52%, rgb(110, 31, 206) 54.5%, rgba(110, 31, 206, 0.2) 101.41%);
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 50px;
+    border:  none;
+}
+.test{
+    background: transparent;
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 50px;
+    border:  2px solid white;
+}
+
+.text p{
+    line-height: 1.4;
+}
+    
+.text h2{
+    font-weight: normal;
+}
+
+::selection{
+    background: #00FFBD;
+    color: black;
+}
+
+.community{
+    display: flex;
+    padding: 2rem 0;
+    width: 60%;
+    margin: auto;
+    justify-content: space-between;
+}
+
+
+.count h1:nth-child(1){
+    font-size: 8rem;
+    font-weight: 100;
+    background: linear-gradient(101.11deg,#f087ff 14.47%,#6e1fce 39.43%,rgba(110,31,206,.1) 76.77%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.count h1:nth-child(3){
+    font-size: 8rem;
+    font-weight: 100;
+    background: linear-gradient(100.93deg,#1fcff1 15.61%,#234cb6 41.38%,rgba(35,76,182,.1) 79.94%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.count h1:nth-child(5){
+    font-size: 8rem;
+    font-weight: 100;
+    background: linear-gradient(100.93deg,#1fcff1 15.61%,#234cb6 41.38%,rgba(35,76,182,.1) 79.94%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+.count p{
+    text-transform: uppercase;
+    color: gray;
+}
 
 
 @media only screen and (max-width:600px){
@@ -171,6 +274,24 @@ li{
     }
     .content p{
         font-size: 1.2rem;
+    }
+
+    .slider{
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .text{
+        width: 100%;
+    }
+
+    .community{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .count h1{
+        font-size: 3rem !important;
     }
 
 }
